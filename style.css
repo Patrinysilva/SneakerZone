@@ -60,6 +60,7 @@ main {
     text-align: center;
     display: flex;
     margin: 30px;
+    gap: 20px;
 }
 
 main img {
@@ -83,9 +84,7 @@ main p {
     margin-bottom: 15px;
     text-align: justify;
 }
-.sobre-loja{
-    padding-left: 20px;
-}
+
 /* Estilo da seção de produtos */
 .produtos{
     font-size: 2rem;
