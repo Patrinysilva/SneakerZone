@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Classe container centralizada */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo do header e navbar */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: #f97316; /* Cor destaque para o nome da loja */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f97316;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    text-align: center;
+    display: flex;
+    margin: 30px;
+}
+
+main img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f97316;
+    border-bottom: 3px solid #d65e0e;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.sobre-loja{
+    padding-left: 20px;
+}
+/* Estilo da seção de produtos */
+.produtos{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f97316;
+    border-bottom: 3px solid #d65e0e;
+}
+section {
+    padding: 40px 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+
+section div:hover {
+    transform: translateY(-5px);
+}
+
+section img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+section button {
+    background-color: #f97316;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section button:hover {
+    background-color: #d65e0e;
+}
+
+/* responsividade */
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    nav h1 {
+        font-size: 1.75rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .container{
+        margin: 0 20%;
+    }
+    main{
+        display: block;
+    }
+    main img {
+        max-width: 500px;
+    }
+    section{
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+
+
+@media (max-width: 640px) {
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    main {
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    main img {
+        max-height: 300px;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    section div {
+        padding: 10px;
+    }
+}
