@@ -159,7 +159,7 @@ section button:hover {
     }
 
     .container{
-        margin: 0 20%;
+        margin: 0 5%;
     }
     main{
         display: block;
@@ -177,6 +177,10 @@ section button:hover {
 @media (max-width: 640px) {
     nav h1 {
         font-size: 1.5rem;
+    }
+
+    .container{
+        margin: 0 10%;
     }
 
     nav ul {
